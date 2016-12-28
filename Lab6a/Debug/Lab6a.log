@@ -1,9 +1,14 @@
-﻿Сборка начата 11/26/2016 3:16:30 PM.
+﻿Сборка начата 12/10/2016 9:03:46 AM.
      1>Проект "D:\C++\Lab8\Lab6a\Lab6a.vcxproj" в узле 2 (целевые объекты Build).
      1>ClCompile:
          C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"stdafx.h" /Fp"Debug\Lab6a.pch" /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt Lab6a.cpp
          Lab6a.cpp
-     1>d:\c++\lab8\lab6a\lab6a.cpp(360): warning C4552: +: оператор не имеет результата; требуется оператор с побочным действием
+     1>d:\c++\lab8\lab6a\lab6a.cpp(318): warning C4552: +: оператор не имеет результата; требуется оператор с побочным действием
+     1>d:\c++\lab8\lab6a\lab6a.cpp(395): warning C4552: +: оператор не имеет результата; требуется оператор с побочным действием
+     1>d:\c++\lab8\lab6a\lab6a.cpp(477): warning C4552: +: оператор не имеет результата; требуется оператор с побочным действием
+     1>d:\c++\lab8\lab6a\lab6a.cpp(563): warning C4552: +: оператор не имеет результата; требуется оператор с побочным действием
+     1>d:\c++\lab8\lab6a\lab6a.cpp(673): warning C4552: +: оператор не имеет результата; требуется оператор с побочным действием
+     1>d:\c++\lab8\lab6a\lab6a.cpp(743): warning C4552: +: оператор не имеет результата; требуется оператор с побочным действием
        Link:
          C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\C++\Lab8\Debug\Lab6a.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:\C++\Lab8\Debug\Lab6a.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\C++\Lab8\Debug\Lab6a.lib" /MACHINE:X86 Debug\Film.obj
          Debug\Lab6a.obj
@@ -13,4 +18,4 @@
 
 Сборка успешно завершена.
 
-Затраченное время: 00:00:00.75
+Затраченное время: 00:00:01.21

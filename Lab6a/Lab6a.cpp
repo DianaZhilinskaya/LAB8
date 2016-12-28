@@ -2,8 +2,10 @@
 #include<iostream>
 #include"Film.h"
 #include "Exeption.h"
+#define NDEBUG <cassert>
+#include <cassert>    
 using namespace std;
-memory xyinya;
+memory x;
 leng regular;
 empty zero;
 //void ex()
@@ -123,10 +125,7 @@ empty zero;
 //	smell(A::rose());     smell(B<A>::foo());     return 0;}
 
 const int max = 10;
-//память
-//наличие элементов
-//превышение max
-//
+
 template <class Rere>
 class Set
 {
@@ -258,39 +257,161 @@ void minimum(Set<Film>& tete)
 	}
 	cout << min << endl;
 }
-
+void print_adds(Set<int>* value)
+{
+	assert(value != NULL);
+	std::cout << "Adress in memory = "
+		<< value << std::endl;
+}
 //10,16,25
 int _tmain(int argc, _TCHAR* argv[])
 {
-	Set<int>* Kuy=NULL;
+	Set<int>* pol=NULL;
 	try// проверка памяти
 	{
-		if (Kuy == NULL)throw xyinya;
-		*Kuy + 1;
+		if (pol == NULL)throw x;
+		*pol + 1;
 		
+	}
+
+	catch (same o)
+	{
+
+		o.print();
+
+
+	}
+	catch (empty w)
+	{
+
+		w.print();
+
+	}
+	catch (leng t)
+	{
+
+		t.print();
+
 	}
 	catch (memory X)
 	{
-		Kuy = new Set<int>;
-		X.print();		
-		*Kuy + 1;
+		pol = new Set<int>;
+		X.print();
+		*pol + 1;
 	}
+
+	catch (Set<int>* p)
+	{
+
+		Set<int> temp;
+		for (int i = 0; i < p->length; i++)
+		{
+			temp + p->set[i];
+		}
+		p = new Set<int>(100);
+		/*p->length = 0;
+		p->set = NULL;
+		p->set = new int[100];*/
+
+		for (int i = 0; i < temp.length; i++)
+		{
+			p + temp.set[i];
+		}
+
+		cout << "Exception5. Overflow.Max size 10\n Memory was reserve.\n Now is OK\n";
+		//cout <<temp << endl;
+		//cout << *p << endl;
+
+	}
+
+
+
+	catch (...)
+	{
+		cout << "Ne rabotaet!" << endl;
+	}
+
+
 	leng Y;
-	cout << *Kuy << endl;
+	cout << *pol << endl;
+	
 	try //проверка на непревышение длины(неправильный индекс)
 	{
 		int i = 12;
-		if (!(i >= 0 && i <= Kuy->length))
+		if (!(i >= 0 && i <= pol->length))
 			throw regular;
-		cout << Kuy[12] << endl;
+		cout << pol[12] << endl;
 		
 	}
-	catch (leng t)
+	/*catch (leng t)
 	{
 		
 		t.print();
 
+	}*/
+
+	catch (same o)
+	{
+
+		o.print();
+
+
 	}
+	catch (empty w)
+	{
+
+		w.print();
+
+	}
+	catch (leng t)
+	{
+
+		t.print();
+
+	}
+	catch (memory X)
+	{
+		pol = new Set<int>;
+		X.print();
+		*pol + 1;
+	}
+
+
+	catch (Set<int>* p)
+	{
+
+		Set<int> temp;
+		for (int i = 0; i < p->length; i++)
+		{
+			temp + p->set[i];
+		}
+		p = new Set<int>(100);
+		/*p->length = 0;
+		p->set = NULL;
+		p->set = new int[100];*/
+
+		for (int i = 0; i < temp.length; i++)
+		{
+			p + temp.set[i];
+		}
+
+		cout << "Exception5. Overflow.Max size 10\n Memory was reserve.\n Now is OK\n";
+		//cout <<temp << endl;
+		//cout << *p << endl;
+
+	}
+
+
+
+	catch (...)
+	{
+		cout << "Ne rabotaet!" << endl;
+	}
+
+
+
+
+
 
 
 	try//проверка на пустое множество
@@ -301,12 +422,79 @@ int _tmain(int argc, _TCHAR* argv[])
 
 	}
 
+	/*catch (empty w)
+	{
+
+		w.print();
+
+	}*/
+
+
+
+	catch (same o)
+	{
+
+		o.print();
+
+
+	}
 	catch (empty w)
 	{
 
 		w.print();
 
 	}
+	catch (leng t)
+	{
+
+		t.print();
+
+	}
+	catch (memory X)
+	{
+		pol = new Set<int>;
+		X.print();
+		*pol + 1;
+	}
+
+
+
+	catch (Set<int>* p)
+	{
+
+		Set<int> temp;
+		for (int i = 0; i < p->length; i++)
+		{
+			temp + p->set[i];
+		}
+		p = new Set<int>(100);
+		/*p->length = 0;
+		p->set = NULL;
+		p->set = new int[100];*/
+
+		for (int i = 0; i < temp.length; i++)
+		{
+			p + temp.set[i];
+		}
+
+		cout << "Exception5. Overflow.Max size 10\n Memory was reserve.\n Now is OK\n";
+		//cout <<temp << endl;
+		//cout << *p << endl;
+
+	}
+
+
+
+	catch (...)
+	{
+		cout << "Ne rabotaet!!" << endl;
+	}
+
+
+
+
+
+
 
 	try//проверка на повторяющиеся элементы
 	{
@@ -320,6 +508,16 @@ int _tmain(int argc, _TCHAR* argv[])
 		kot + 5;
 	}
 
+	/*catch (same o)
+	{
+
+		o.print();
+
+
+	}*/
+
+
+
 	catch (same o)
 	{
 
@@ -327,7 +525,64 @@ int _tmain(int argc, _TCHAR* argv[])
 
 
 	}
+	catch (empty w)
+	{
+
+		w.print();
+
+	}
+	catch (leng t)
+	{
+
+		t.print();
+
+	}
+	catch (memory X)
+	{
+		pol = new Set<int>;
+		X.print();
+		*pol + 1;
+	}
+
+
+	catch (Set<int>* p)
+	{
+
+		Set<int> temp;
+		for (int i = 0; i < p->length; i++)
+		{
+			temp + p->set[i];
+		}
+		p = new Set<int>(100);
+		/*p->length = 0;
+		p->set = NULL;
+		p->set = new int[100];*/
+
+		for (int i = 0; i < temp.length; i++)
+		{
+			p + temp.set[i];
+		}
+
+		cout << "Exception5. Overflow.Max size 10\n Memory was reserve.\n Now is OK\n";
+		//cout <<temp << endl;
+		//cout << *p << endl;
+
+	}
+
+
+
+	catch (...)
+	{
+		cout << "Ne rabotaet!" << endl;
+	}
+
+
+
+
+
+
 	Set<int> vuv;
+
 	try//переполнение
 	{
 
@@ -346,31 +601,174 @@ int _tmain(int argc, _TCHAR* argv[])
 		cout << vuv << endl;
 	}
 
+	//catch (Set<int>* p)
+	//{
+	//	
+	//	Set<int> temp;
+	//	for (int i = 0; i < p->length; i++)
+	//	{
+	//		temp + p->set[i];
+	//	}
+	//	p = new Set<int>(100);
+	//	/*p->length = 0;
+	//	p->set = NULL;
+	//	p->set = new int[100];*/
+	//	
+	//	for (int i = 0; i < temp.length; i++)
+	//	{
+	//		p + temp.set[i];
+	//	}
+	//	
+	//	cout << "Exception5. Overflow.Max size 10\n Memory was reserve.\n Now is OK\n";
+	//	//cout <<temp << endl;
+	//	//cout << *p << endl;
+
+	//}
+	//cout << vuv << endl;
+	
+
+
+	catch (same o)
+	{
+
+		o.print();
+
+
+	}
+	catch (empty w)
+	{
+
+		w.print();
+
+	}
+	catch (leng t)
+	{
+
+		t.print();
+
+	}
+	catch (memory X)
+	{
+		pol = new Set<int>;
+		X.print();
+		*pol + 1;
+	}
+
+
 	catch (Set<int>* p)
 	{
-		
+
 		Set<int> temp;
 		for (int i = 0; i < p->length; i++)
 		{
 			temp + p->set[i];
 		}
 		p = new Set<int>(100);
+		/*p->length = 0;
+		p->set = NULL;
+		p->set = new int[100];*/
+
 		for (int i = 0; i < temp.length; i++)
 		{
 			p + temp.set[i];
 		}
-		/*
-		p->length = 0;
-		p->set = NULL;
-		p->set = new int[100];
-		
-		*/
+
 		cout << "Exception5. Overflow.Max size 10\n Memory was reserve.\n Now is OK\n";
 		//cout <<temp << endl;
-		cout << *p << endl;
+		//cout << *p << endl;
+
 	}
+
+
+
+	catch (...)
+	{
+		cout << "Ne rabotaet!" << endl;
+	}
+	//cout << vuv << endl;
+
+
+	try
+	{
+	int	i = 3;
+	if(i-3==0)
+		throw i;
+		cout<<2 / (i-3);
+		
+	}
+
+
+	catch (same o)
+	{
+
+		o.print();
+
+
+	}
+	catch (empty w)
+	{
+
+		w.print();
+
+	}
+	catch (leng t)
+	{
+
+		t.print();
+
+	}
+	catch (memory X)
+	{
+		pol = new Set<int>;
+		X.print();
+		*pol + 1;
+	}
+
 	
-	
+	catch (Set<int>* p)
+	{
+
+		Set<int> temp;
+		for (int i = 0; i < p->length; i++)
+		{
+			temp + p->set[i];
+		}
+		p = new Set<int>(100);
+		/*p->length = 0;
+		p->set = NULL;
+		p->set = new int[100];*/
+
+		for (int i = 0; i < temp.length; i++)
+		{
+			p + temp.set[i];
+		}
+
+		cout << "Exception5. Overflow.Max size 10\n Memory was reserve.\n Now is OK\n";
+		//cout <<temp << endl;
+		//cout << *p << endl;
+
+	}
+
+
+
+	catch (...)
+	{
+		cout << "Nye rabotaet!" << endl;
+	}
+
+	Set<int> *kryshka=NULL;
+	Set<int> krushka ;
+	/*assert(&kryshka==NULL)
+	{
+
+	}
+*/
+
+	print_adds(&krushka);
+	print_adds(kryshka);
+
+
+
 	return 0;
 }
 
